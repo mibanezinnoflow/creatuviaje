@@ -1,0 +1,207 @@
+import type { Destination } from "./types";
+
+import japon from "@/assets/dest-japon.jpg";
+import italia from "@/assets/dest-italia.jpg";
+import portugal from "@/assets/dest-portugal.jpg";
+import islandia from "@/assets/dest-islandia.jpg";
+import tailandia from "@/assets/dest-tailandia.jpg";
+import marruecos from "@/assets/dest-marruecos.jpg";
+import espana from "@/assets/art-espana.jpg";
+
+export const destinations: Destination[] = [
+  {
+    slug: "japon",
+    name: "Japón",
+    country: "Japón",
+    continent: "asia",
+    region: "Asia oriental",
+    cities: ["Tokio", "Kioto", "Osaka", "Kanazawa", "Nara"],
+    image: japon,
+    excerpt:
+      "Templos silenciosos, trenes puntuales al segundo y ciudades que funcionan como relojes amables.",
+    intro: [
+      "Japón es uno de esos destinos que reordenan la idea que uno tiene de viajar. Todo funciona, todo está limpio, todo tiene un motivo, y sin embargo el país nunca resulta frío: hay una atención al detalle que se percibe en la forma de servir un té, en la manera de envolver un paquete o en el orden silencioso de una estación a las siete de la mañana.",
+      "El primer viaje suele concentrarse en el eje Tokio–Kioto–Osaka, y es una buena decisión: en dos semanas se puede pasar del neón de Shinjuku a los senderos de bambú de Arashiyama sin sensación de prisa. A partir del segundo viaje empieza lo interesante: los Alpes japoneses, la costa de Tohoku, las islas del mar interior de Seto.",
+      "Nuestra recomendación es sencilla: menos ciudades, más días en cada una. Japón se disfruta cuando se camina sin destino y se entra en el primer restaurante de seis asientos que aparece.",
+    ],
+    bestSeason: "Marzo–mayo y octubre–noviembre",
+    recommendedDays: "12–16 días",
+    budget: "110–150 € por día",
+    currency: "Yen (JPY)",
+    language: "Japonés",
+    tripTypes: ["ciudades", "gastronomia", "aventura"],
+    highlights: [
+      { name: "Fushimi Inari, Kioto", description: "Miles de puertas torii subiendo la montaña; ve antes de las siete." },
+      { name: "Barrio de Yanaka, Tokio", description: "El Tokio antiguo que sobrevivió a los bombardeos, con cafés y templos." },
+      { name: "Kamikochi, Alpes japoneses", description: "Valle alpino con ríos turquesa y una de las mejores caminatas del país." },
+      { name: "Naoshima", description: "Isla-museo con arte contemporáneo entre casas de pescadores." },
+    ],
+    featured: true,
+  },
+  {
+    slug: "italia",
+    name: "Italia",
+    country: "Italia",
+    continent: "europa",
+    region: "Sur de Europa",
+    cities: ["Roma", "Nápoles", "Florencia", "Bolonia", "Positano"],
+    image: italia,
+    excerpt:
+      "Pueblos colgados sobre el mar, sobremesas largas y una capacidad infinita para hacer bonito lo cotidiano.",
+    intro: [
+      "Italia se viaja mal con prisa. Es un país de distancias cortas y de tentaciones constantes: cada pueblo tiene una iglesia que merece una parada, cada plaza una terraza donde se pierde una hora sin darse cuenta.",
+      "El sur —Nápoles, la Costa Amalfitana, Puglia— es intenso, ruidoso y luminoso. El norte —Piamonte, los lagos, los Dolomitas— es más ordenado y verde. Ambos merecen viajes propios.",
+      "Si es tu primera vez, elige una región y quédate. Roma en cuatro días, la Amalfitana en cinco y Nápoles como base de comida son un plan difícil de mejorar.",
+    ],
+    bestSeason: "Abril–junio y septiembre–octubre",
+    recommendedDays: "8–12 días",
+    budget: "90–130 € por día",
+    currency: "Euro (EUR)",
+    language: "Italiano",
+    tripTypes: ["gastronomia", "ciudades", "escapadas", "playa"],
+    highlights: [
+      { name: "Sendero de los Dioses", description: "Ruta entre Bomerano y Nocelle con vistas a toda la Amalfitana." },
+      { name: "Mercado de Ballarò, Palermo", description: "El mejor desayuno callejero de Europa, sin discusión." },
+      { name: "Matera", description: "Ciudad de piedra excavada en la roca; duerme dentro del Sassi." },
+      { name: "Lago de Braies", description: "Postal de los Dolomitas; llega al amanecer para tenerlo vacío." },
+    ],
+    featured: true,
+  },
+  {
+    slug: "portugal",
+    name: "Portugal",
+    country: "Portugal",
+    continent: "europa",
+    region: "Península Ibérica",
+    cities: ["Lisboa", "Oporto", "Évora", "Lagos", "Sintra"],
+    image: portugal,
+    excerpt:
+      "Azulejos, acantilados y una forma tranquila de entender el tiempo a dos horas de casa.",
+    intro: [
+      "Portugal es el destino perfecto para un primer viaje largo o para una escapada de tres días. Es asequible, cercano y tiene una variedad sorprendente: ciudades con alma, una costa salvaje y un interior de pueblos blancos casi vacíos.",
+      "Lisboa se disfruta caminando cuesta arriba sin mirar el reloj; Oporto se bebe despacio a orillas del Duero; el Alentejo es el gran secreto del país, con carreteras rectas entre encinas y alojamientos rurales excelentes.",
+    ],
+    bestSeason: "Mayo–junio y septiembre",
+    recommendedDays: "5–9 días",
+    budget: "70–100 € por día",
+    currency: "Euro (EUR)",
+    language: "Portugués",
+    tripTypes: ["ciudades", "playa", "escapadas", "road-trips"],
+    highlights: [
+      { name: "Miradouro da Graça, Lisboa", description: "El atardecer más honesto de la ciudad, sin colas." },
+      { name: "Valle del Duero", description: "Terrazas de viñedos y quintas donde dormir entre viñas." },
+      { name: "Costa Vicentina", description: "Acantilados y playas casi vírgenes en el suroeste." },
+      { name: "Comporta", description: "Arrozales, pinares y kilómetros de arena blanca." },
+    ],
+    featured: true,
+  },
+  {
+    slug: "islandia",
+    name: "Islandia",
+    country: "Islandia",
+    continent: "europa",
+    region: "Atlántico Norte",
+    cities: ["Reikiavik", "Vík", "Höfn", "Akureyri"],
+    image: islandia,
+    excerpt:
+      "Cascadas, arena negra y una carretera circular que lo explica todo sin necesidad de palabras.",
+    intro: [
+      "Islandia no es un destino barato, pero es uno de los pocos lugares donde el paisaje cambia cada media hora de conducción. Cascadas, glaciares, campos de lava, playas negras y fiordos: todo cabe en una isla que se recorre en diez días por la Ring Road.",
+      "El clima manda. Aquí no se planifica por horas sino por ventanas de tiempo, y aprender a improvisar es parte del viaje. En verano hay luz casi permanente; en invierno, auroras y carreteras exigentes.",
+    ],
+    bestSeason: "Junio–agosto (verano) y febrero–marzo (auroras)",
+    recommendedDays: "8–12 días",
+    budget: "150–200 € por día",
+    currency: "Corona islandesa (ISK)",
+    language: "Islandés",
+    tripTypes: ["aventura", "road-trips", "montana"],
+    highlights: [
+      { name: "Jökulsárlón", description: "Laguna glaciar con icebergs que salen al mar cada mañana." },
+      { name: "Península de Snæfellsnes", description: "Islandia en miniatura: volcán, playas, acantilados y pueblos." },
+      { name: "Landmannalaugar", description: "Montañas de riolita de colores, solo accesible en verano." },
+      { name: "Seljalandsfoss", description: "La cascada que se puede rodear por detrás." },
+    ],
+    featured: true,
+  },
+  {
+    slug: "tailandia",
+    name: "Tailandia",
+    country: "Tailandia",
+    continent: "asia",
+    region: "Sudeste asiático",
+    cities: ["Bangkok", "Chiang Mai", "Krabi", "Ayutthaya"],
+    image: tailandia,
+    excerpt:
+      "El primer viaje al sudeste asiático que sigue funcionando: comida, islas y logística sencilla.",
+    intro: [
+      "Tailandia sigue siendo la puerta de entrada al sudeste asiático, y con razón: es segura, barata, muy bien conectada y ofrece dos viajes distintos en un solo país. El norte, con Chiang Mai y las montañas; el sur, con dos mares y cientos de islas.",
+      "Bangkok merece más que una noche de tránsito. Sus mercados, sus templos y su comida callejera son parte del viaje, no un trámite.",
+    ],
+    bestSeason: "Noviembre–marzo",
+    recommendedDays: "14–18 días",
+    budget: "45–70 € por día",
+    currency: "Baht (THB)",
+    language: "Tailandés",
+    tripTypes: ["playa", "gastronomia", "aventura", "familia"],
+    highlights: [
+      { name: "Ao Phang Nga", description: "Islas de roca caliza que emergen del mar; mejor en kayak." },
+      { name: "Chiang Rai y sus templos", description: "El Templo Blanco y el Templo Azul en un mismo día." },
+      { name: "Koh Kood", description: "La isla tranquila que aún no ha cambiado." },
+      { name: "Mercado de Or Tor Kor, Bangkok", description: "Fruta, curries y marisco a precio local." },
+    ],
+  },
+  {
+    slug: "marruecos",
+    name: "Marruecos",
+    country: "Marruecos",
+    continent: "africa",
+    region: "Norte de África",
+    cities: ["Marrakech", "Fez", "Chefchaouen", "Essaouira"],
+    image: marruecos,
+    excerpt:
+      "Medinas, desierto y montaña a tres horas de vuelo: el viaje lejano más cercano que existe.",
+    intro: [
+      "Marruecos es intensidad concentrada. En una semana se pasa de las medinas de Fez al Atlas, y del Atlas a las dunas de Merzouga. Es un destino que exige paciencia y curiosidad, y que devuelve mucho a quien viaja despacio.",
+      "Recomendamos combinar una ciudad grande con una zona rural: Marrakech y el valle del Ourika, o Fez y el Rif. Y dejar siempre una tarde libre para perderse.",
+    ],
+    bestSeason: "Marzo–mayo y octubre–noviembre",
+    recommendedDays: "7–10 días",
+    budget: "55–85 € por día",
+    currency: "Dírham (MAD)",
+    language: "Árabe y francés",
+    tripTypes: ["aventura", "gastronomia", "escapadas"],
+    highlights: [
+      { name: "Medina de Fez", description: "La medina medieval más grande del mundo; contrata un guía el primer día." },
+      { name: "Valle del Draa", description: "Palmerales infinitos camino del desierto." },
+      { name: "Cascadas de Ouzoud", description: "Escapada verde a tres horas de Marrakech." },
+      { name: "Essaouira", description: "Viento, gaviotas y pescado a la plancha en el puerto." },
+    ],
+  },
+  {
+    slug: "espana",
+    name: "España",
+    country: "España",
+    continent: "europa",
+    region: "Península Ibérica",
+    cities: ["Asturias", "Galicia", "Granada", "Menorca", "Pirineos"],
+    image: espana,
+    excerpt:
+      "El destino que creemos conocer y que sigue guardando pueblos, costas y montañas por descubrir.",
+    intro: [
+      "Viajar por España tiene una ventaja evidente: la variedad. En una misma semana se puede pasar de una playa mediterránea a un valle pirenaico o a un desierto casi lunar. Y una desventaja igual de evidente: la damos por vista.",
+      "Nuestra propuesta es mirar el país como si fuera ajeno: el norte verde, los pueblos de la Sierra de Gredos, las Bardenas, el interior de Menorca, la Galicia de los cañones del Sil.",
+    ],
+    bestSeason: "Todo el año, según región",
+    recommendedDays: "5–10 días",
+    budget: "70–110 € por día",
+    currency: "Euro (EUR)",
+    language: "Español",
+    tripTypes: ["road-trips", "montana", "gastronomia", "familia", "playa"],
+    highlights: [
+      { name: "Ruta del Cares", description: "El desfiladero más famoso de los Picos de Europa." },
+      { name: "Ribeira Sacra", description: "Viñedos verticales sobre el río Sil y monasterios escondidos." },
+      { name: "Bardenas Reales", description: "Paisaje semidesértico en Navarra, ideal en bicicleta." },
+      { name: "Cabo de Gata", description: "La costa mediterránea sin urbanizar que aún queda." },
+    ],
+  },
+];
